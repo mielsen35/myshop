@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,12 @@ EMAIL_PORT = 465
 EMAIL_USE_SSL = True  # Используйте SSL, так как порт 465
 EMAIL_HOST_USER = 'sasha.crav4enko2014@mail.ru'
 EMAIL_HOST_PASSWORD = 'dzg55GyhqGqj5GNTXpyc'
+
+# Настроечные параметры Stripe
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51PVt9kRqrtR3IERZFNCH8asrwZH2HGl4YdCbPPwp1jvYHfueQ4oawTCTU9IfzqUuMny6Q5kq1DGSBfaQ6JCUZKB000BvKKhmTE' # Публикуемый ключ
+STRIPE_SECRET_KEY = 'sk_test_51PVt9kRqrtR3IERZagzvK7FQmeJxkQHZfuOC7xfxlGyiFGHzPyTYbPwuNEFFoqdo43MtEepkFI28AwLfHkDCpEmE00TceIMPmM' # Секретный ключ
+STRIPE_API_VERSION = '2024-06-20'
+
+STRIPE_WEBHOOK_SECRET = 'whsec_02fc610e6a80f7de403cb3ae0f81bdb89beed1a9220a06205c3c7d092b3cddd6'
+
+STATIC_ROOT = BASE_DIR / 'static'
