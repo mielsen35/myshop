@@ -10,11 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -26,7 +26,6 @@ SECRET_KEY = 'django-insecure-7#4*74u+#san@*l$359^us66h(zlq=yg1-4o+zk)*fnmw#ewq=
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -42,11 +41,14 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
     'coupons.apps.CouponsConfig',
+    'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -75,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myshop.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -85,7 +86,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -105,11 +105,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -118,7 +117,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -135,7 +133,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CART_SESSION_ID = 'cart'
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Конфигурация сервера электронной почты
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 465
@@ -144,8 +142,8 @@ EMAIL_HOST_USER = 'sasha.crav4enko2014@mail.ru'
 EMAIL_HOST_PASSWORD = 'dzg55GyhqGqj5GNTXpyc'
 
 # Настроечные параметры Stripe
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51PVt9kRqrtR3IERZFNCH8asrwZH2HGl4YdCbPPwp1jvYHfueQ4oawTCTU9IfzqUuMny6Q5kq1DGSBfaQ6JCUZKB000BvKKhmTE' # Публикуемый ключ
-STRIPE_SECRET_KEY = 'sk_test_51PVt9kRqrtR3IERZagzvK7FQmeJxkQHZfuOC7xfxlGyiFGHzPyTYbPwuNEFFoqdo43MtEepkFI28AwLfHkDCpEmE00TceIMPmM' # Секретный ключ
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51PVt9kRqrtR3IERZFNCH8asrwZH2HGl4YdCbPPwp1jvYHfueQ4oawTCTU9IfzqUuMny6Q5kq1DGSBfaQ6JCUZKB000BvKKhmTE'  # Публикуемый ключ
+STRIPE_SECRET_KEY = 'sk_test_51PVt9kRqrtR3IERZagzvK7FQmeJxkQHZfuOC7xfxlGyiFGHzPyTYbPwuNEFFoqdo43MtEepkFI28AwLfHkDCpEmE00TceIMPmM'  # Секретный ключ
 STRIPE_API_VERSION = '2024-06-20'
 
 STRIPE_WEBHOOK_SECRET = 'whsec_02fc610e6a80f7de403cb3ae0f81bdb89beed1a9220a06205c3c7d092b3cddd6'
@@ -156,3 +154,26 @@ STATIC_ROOT = BASE_DIR / 'static'
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+LANGUAGES = [
+    ('en', _('English')),
+    ('es', _('Spanish')),
+    ('ru', _('Russian')),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+
+# настройки django-parler
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+        {'code': 'ru'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
