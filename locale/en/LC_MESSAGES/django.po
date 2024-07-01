@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-28 15:27+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-07-01 08:12+0000\n"
+"Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: cart/forms.py:11 cart/templates/cart/detail.html:16
 #: payment/templates/payment/process.html:15
@@ -27,12 +28,14 @@ msgstr ""
 msgid "Your shopping cart"
 msgstr ""
 
-#: cart/templates/cart/detail.html:14 payment/templates/payment/process.html:12
+#: cart/templates/cart/detail.html:14
+#: payment/templates/payment/process.html:12
 #: venv/lib/python3.10/site-packages/django/db/models/fields/files.py:393
 msgid "Image"
 msgstr ""
 
-#: cart/templates/cart/detail.html:15 payment/templates/payment/process.html:13
+#: cart/templates/cart/detail.html:15
+#: payment/templates/payment/process.html:13
 msgid "Product"
 msgstr ""
 
@@ -44,7 +47,8 @@ msgstr ""
 msgid "Unit price"
 msgstr ""
 
-#: cart/templates/cart/detail.html:19 payment/templates/payment/process.html:14
+#: cart/templates/cart/detail.html:19
+#: payment/templates/payment/process.html:14
 msgid "Price"
 msgstr ""
 
@@ -52,7 +56,8 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: cart/templates/cart/detail.html:53 payment/templates/payment/process.html:33
+#: cart/templates/cart/detail.html:53
+#: payment/templates/payment/process.html:33
 msgid "Subtotal"
 msgstr ""
 
@@ -64,7 +69,8 @@ msgid ""
 "            "
 msgstr ""
 
-#: cart/templates/cart/detail.html:70 payment/templates/payment/process.html:16
+#: cart/templates/cart/detail.html:70
+#: payment/templates/payment/process.html:16
 #: payment/templates/payment/process.html:52
 msgid "Total"
 msgstr ""
@@ -108,19 +114,19 @@ msgstr ""
 
 #: myshop/urls.py:26
 msgid "cart/"
-msgstr ""
+msgstr "cart/"
 
 #: myshop/urls.py:27
 msgid "orders/"
-msgstr ""
+msgstr "orders/"
 
 #: myshop/urls.py:28
 msgid "payment/"
-msgstr ""
+msgstr "payment/"
 
 #: myshop/urls.py:29
 msgid "coupons/"
-msgstr ""
+msgstr "coupons/"
 
 #: payment/templates/payment/canceled.html:4
 msgid "Payment canceled"
@@ -168,15 +174,15 @@ msgstr ""
 
 #: payment/urls.py:7
 msgid "process/"
-msgstr ""
+msgstr "process/"
 
 #: payment/urls.py:8
 msgid "done/"
-msgstr ""
+msgstr "done/"
 
 #: payment/urls.py:9
 msgid "canceled/"
-msgstr ""
+msgstr "canceled/"
 
 #: shop/templates/shop/base.html:8 shop/templates/shop/base.html:14
 msgid "My shop"
@@ -559,8 +565,8 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:267
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:279
@@ -760,15 +766,15 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1489
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1497
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1502
@@ -787,8 +793,8 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1789
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1793
@@ -943,7 +949,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: venv/lib/python3.10/site-packages/django/forms/boundfield.py:184
 msgid ":?.!"
 msgstr ""
@@ -993,7 +1000,8 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:625
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1101,7 +1109,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/models.py:1429
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/models.py:1568
@@ -1580,10 +1589,10 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/csrf.py:127
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1635,8 +1644,8 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/generic/dates.py:692
@@ -1692,10 +1701,10 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:229

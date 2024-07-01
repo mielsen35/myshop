@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-28 15:27+0300\n"
-"PO-Revision-Date: 2024-06-28 12:33+0000\n"
+"PO-Revision-Date: 2024-07-01 08:10+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -117,19 +117,19 @@ msgstr "Русский"
 
 #: myshop/urls.py:26
 msgid "cart/"
-msgstr "корзина/"
+msgstr "cart/"
 
 #: myshop/urls.py:27
 msgid "orders/"
-msgstr "заказы/"
+msgstr "orders/"
 
 #: myshop/urls.py:28
 msgid "payment/"
-msgstr "оплата/"
+msgstr "payment/"
 
 #: myshop/urls.py:29
 msgid "coupons/"
-msgstr "купоны/"
+msgstr "coupons/"
 
 #: payment/templates/payment/canceled.html:4
 msgid "Payment canceled"
@@ -180,15 +180,15 @@ msgstr "Оплатить сейчас"
 
 #: payment/urls.py:7
 msgid "process/"
-msgstr "процесс/"
+msgstr "process/"
 
 #: payment/urls.py:8
 msgid "done/"
-msgstr "выполнено/"
+msgstr "done/"
 
 #: payment/urls.py:9
 msgid "canceled/"
-msgstr "отменено/"
+msgstr "canceled/"
 
 #: shop/templates/shop/base.html:8 shop/templates/shop/base.html:14
 msgid "My shop"
@@ -209,11 +209,14 @@ msgid_plural ""
 "            %(items)s items, $%(total)s\n"
 "            "
 msgstr[0] ""
-"%(items)s товар, $%(total)s\n"
+"\n"
+"%(items)s товар, $%(total)s"
 msgstr[1] ""
-"%(items)s товара, $%(total)s\n"
+"\n"
+"%(items)s товара, $%(total)s"
 msgstr[2] ""
-"%(items)s товаров, $%(total)s\n"
+"\n"
+"%(items)s товаров, $%(total)s"
 msgstr[3] ""
 
 #: shop/templates/shop/base.html:29
